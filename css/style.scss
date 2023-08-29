@@ -1,0 +1,386 @@
+$colorbackground:#e8e8e8;
+$colorcontainer: #fff;
+$colorsampletext: #717171;
+$colorheaderfooter: #003366;
+
+//общие настройки
+
+body {
+    background-color: $colorbackground;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playfair Display', serif;
+    color: $colorheaderfooter;
+}
+
+p,
+li {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $colorsampletext;
+    font-size: 20px;
+
+    @media (max-width: 992px) {
+        font-size: 15px;
+    }
+}
+
+//разделы
+//телефон
+
+.phone {
+    background: $colorcontainer;
+
+    p {
+        text-align: right;
+        font-size: 25px;
+        padding: 35px;
+
+        @media (max-width: 992px) {
+            font-size: 20px;
+        }
+    }
+}
+
+//хедер
+
+.header {
+    background: $colorheaderfooter;
+
+    h1 {
+        color: $colorcontainer;
+        font-size: 51px;
+        font-weight: 600;
+        margin: 10px 0 0 70px;
+
+        span {
+            font-weight: 900;
+        }
+
+        @media (max-width:992px) {
+            font-size: 30px;
+        }
+        @media (max-width: 768px) {
+            margin: 10px 0 0 0;
+        }
+
+    }
+
+    h2 {
+        color: $colorcontainer;
+        font-size: 38px;
+        font-weight: 600;
+        margin: -10px 70px 30px 0;
+        text-align: right;
+        font-style: italic;
+
+        @media (max-width: 992px) {
+            font-size: 30px;
+        }
+        @media (max-width: 768px) {
+            margin: 0 0 20px 0;
+        }
+    }
+}
+
+//введение
+
+.introduction {
+    background: $colorcontainer;
+    padding: 50px;
+
+    @media (max-width: 576px) {
+        padding: 20px;
+        }
+
+    p {
+        text-align: justify;
+        margin-bottom: 20px;
+        line-height: 1.3;
+        @media (max-width: 768px) {
+            margin-top:20px;
+        }
+    }
+
+    img {
+        width: 95%;
+        
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    h3 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media (max-width: 992px) {
+            font-size: 30px;
+        }
+    }
+
+    .diplomas {
+        text-align: center;
+    }
+
+    .col-sm-12 {
+        margin-left: 10px;
+    }
+
+    .owl-carousel {
+        .owl-item {
+            img {
+                display: block;
+                width: 90%;
+            }
+        }
+
+        .owl-nav {
+            .owl-prev {
+                float: left;
+                display: inline-block;
+                margin-top: -27%;
+                margin-left: -49px;
+
+                &:before {
+                    // fa-chevron-left
+                    content: url(/images/left.png);
+                    margin-right: 10px;
+                }
+            }
+
+            .owl-next {
+                float: right;
+                display: inline-block;
+                margin-top: -27%;
+                margin-right: -43px;
+
+                &:after {
+                    //fa-chevron-right
+                    content: url(/images/right.png);
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+//преимущества
+
+.advantages {
+    background: $colorbackground;
+    padding: 50px;
+
+    @media (max-width: 576px) {
+        padding: 20px;
+        }
+
+    h3 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 600;
+
+        @media (max-width: 992px) {
+            font-size: 30px;
+        }
+        @media (max-width: 576px) {
+            margin-top: 20px;
+            }
+    }
+
+    ul {
+        padding: 0 10px;
+
+        li {
+            list-style-type: circle;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 40px;
+        
+        @media (max-width: 768px) {
+            text-align: left;
+        }
+    }
+}
+
+//цены
+
+.price {
+    background: $colorcontainer;
+    padding: 50px;
+
+    @media (max-width: 576px) {
+        padding: 20px;
+        }
+
+    h3 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 600;
+
+        @media (max-width: 992px) {
+            font-size: 30px;
+        }
+    }
+
+    h4 {
+        font-size: 25px;
+        margin-bottom: 20px;
+        
+        @media (max-width: 768px) {
+            text-align: left !important;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 40px;
+
+        @media (max-width: 768px) {
+            text-align: left;
+        }
+    }
+
+    ul {
+        li {
+
+            @media (max-width: 768px) {
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+//отзывы
+
+.reviews {
+    padding: 50px;
+
+    @media (max-width: 576px) {
+        padding: 20px;
+        }
+
+    h3 {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 600;
+
+        @media (max-width: 992px) {
+            font-size: 30px;
+        }
+    }
+
+    p {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        color: $colorheaderfooter;
+
+        a {
+            color: $colorheaderfooter;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        @media (max-width:992px) {
+            font-size: 20px;
+        }
+    }
+}
+
+//футер
+
+.footer {
+    background: $colorheaderfooter;
+    padding: 50px;
+
+    @media (max-width: 576px) {
+    padding: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+
+        a {
+            color: white;
+            margin-bottom: 20px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        @media (max-width: 768px) {
+            text-align: left !important;
+            margin-top: 20px;
+        }
+    }
+
+}
+
+//модальное окно
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: fit-content !important;
+        margin: 10% auto !important;
+
+        img {
+            max-height: 100vh;
+        }
+    }
+}
+
+
+//шрифты
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("/fonts/Robotocondensed.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "playfairdisplay";
+    src: url("/fonts/playfairdisplay.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "playfairdisplayblack";
+    src: url("/fonts/playfairdisplayblack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "playfairdisplayblackitalic";
+    src: url("/fonts/playfairdisplayblackitalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "playfairdisplaybold";
+    src: url("/fonts/playfairdisplaybold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "playfairdisplaybolditalic";
+    src: url("/fonts/playfairdisplaybolditalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
